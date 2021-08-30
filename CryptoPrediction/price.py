@@ -14,6 +14,6 @@ def get_price_data(url, type, from_date, to_date):
 	return data
 
 
-df = get_price_data(apiurl, 'historical/close', '2017-12-01', '2018-09-02')
+df = get_price_data(apiurl, 'historical/close', '2018-12-01', '2021-09-02')
 df.to_csv(os.path.join(os.path.dirname(__file__), "data/dat.csv"))
 
